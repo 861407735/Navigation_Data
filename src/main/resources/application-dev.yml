@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:mysql://rm-bp1h9b0n85es6j62bpo.mysql.rds.aliyuncs.com:3306/db_zjjc_tb_dev?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: zjjc_tb_dev
+    password: dtd@0209
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      initial-size: 10 #初始化连接数
+      min-idle: 5
+      max-active: 50
+      max-wait: 60000
+server:
+  port: 8080
